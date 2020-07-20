@@ -1,1 +1,98 @@
 <!DOCTYPE html>
+<title>Picture Colorizer</title>
+<section>
+  <div class="container p-5">
+    <!-- For demo purpose -->
+    <div class="row mb-5 text-center text-white">
+      <div class="col-lg-10 mx-auto">
+        <h1 class="display-4">Picture Colorizer</h1>
+        <p class="lead">Colorize your black & white pictures using AI</p>
+      </div>
+    </div>
+    <!-- End -->
+
+
+    <div class="row">
+      <div class="col-lg-5 mx-auto">
+        <div class="p-5 bg-white shadow rounded-lg"><img src="https://res.cloudinary.com/mhmd/image/upload/v1557366994/img_epm3iz.png" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill">
+
+          <!-- Default bootstrap file upload-->
+
+          <h6 class="text-center mb-4 text-muted">
+            Please choose your black & white picture
+          </h6>
+          
+          <div class="custom-file overflow-hidden rounded-pill mb-5">
+            <input id="customFile" type="file" class="custom-file-input rounded-pill">
+            <label for="customFile" class="custom-file-label rounded-pill">Choose file</label>
+          </div>
+          <!-- End -->
+
+          <h6 class="text-center mb-4 text-muted" id="fileName" style="visibility: hidden;"></h6>
+
+          <!-- Upload button -->
+          <label for="fileUpload" class="file-upload btn btn-primary btn-block rounded-pill shadow">
+              <i class="fa fa-upload mr-2"></i>
+              Upload
+          </label>
+          <!-- End -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.file-upload input[type='file'] {
+  display: none;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+body {
+  background: #00B4DB;
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  height: 100vh;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.custom-file-label.rounded-pill {
+  border-radius: 50rem;
+}
+
+.custom-file-label.rounded-pill::after {
+  border-radius: 0 50rem 50rem 0;
+}
+
+</style>
+
+<script>
+document.getElementById('customFile').onchange = function () {
+  document.getElementById('fileName').innerHTML = "Selected file: " + this.value.replace(/.*[\/\\]/, '');
+  document.getElementById('fileName').style.visibility = "visible";
+
+};
+</script>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
