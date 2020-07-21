@@ -1,6 +1,6 @@
 # chromaGAN-colorizer-using-flask
 
-This is a basic Flask application to colorize pictures using ChromaGAN.
+A basic Flask application to colorize pictures using ChromaGAN.
 
 ![Casablanca](examples/casablanca.png?raw=true)
 
@@ -17,7 +17,7 @@ git clone https://github.com/4turkuaz/chromaGAN-colorizer-using-flask
 cd chromaGAN-colorizer-using-flask/
 ```
 
-Then, download the pretrained model from link above then replace it with `dummyFile` under `MODEL` directory.
+Then, download the pretrained model from link below then replace it with `dummyFile` under `MODEL` directory.
 
 Besides, in the first use, it is required to download the `VGG16` to colorize the pictures. It will be downloaded automatically once you run it.
 
