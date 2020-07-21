@@ -20,7 +20,7 @@ In case you don't want to install them all, there are key libraries to be instal
 
 keras==2.2.4, tensorflow==1.11.0, Flask==1.1.2
 
-#### PS: You need to download the pretrained model in order to use application, thus it could be found [here](https://drive.google.com/drive/folders/12s4rbLmnjW4e8MmESbfRStGbrjOrahlW).
+#### PS: You need to download the pretrained model in order to use application, thus it could be found [here](https://drive.google.com/drive/folders/12s4rbLmnjW4e8MmESbfRStGbrjOrahlW). You need to download "my_model_colorization.h5".
 
 ## Usage
 
