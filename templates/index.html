@@ -21,21 +21,21 @@
           <h6 class="text-center mb-4 text-muted">
             Please choose your black & white picture
           </h6>
-          
-          <div class="custom-file overflow-hidden rounded-pill mb-5">
-            <input id="customFile" type="file" class="custom-file-input rounded-pill">
-            <label for="customFile" class="custom-file-label rounded-pill">Choose file</label>
+
+          <form action="/upload-image" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="image" id="image">
+            <label class="custom-file-label" for="image">Select image...</label>
           </div>
+        </div>
+<h6 class="text-center mb-4 text-muted" id="fileName" style="visibility: hidden;"></h6>
+        <button type="submit" class="btn btn-primary">Upload</button>
+
+      </form>
           <!-- End -->
 
-          <h6 class="text-center mb-4 text-muted" id="fileName" style="visibility: hidden;"></h6>
-
-          <!-- Upload button -->
-          <label for="fileUpload" class="file-upload btn btn-primary btn-block rounded-pill shadow">
-              <i class="fa fa-upload mr-2"></i>
-              Upload
-          </label>
-          <!-- End -->
 
         </div>
       </div>
@@ -86,11 +86,10 @@ body {
 </style>
 
 <script>
-document.getElementById('customFile').onchange = function () {
-  document.getElementById('fileName').innerHTML = "Selected file: " + this.value.replace(/.*[\/\\]/, '');
-  document.getElementById('fileName').style.visibility = "visible";
-
-};
+    document.getElementById('image').onchange = function () {
+      document.getElementById('fileName').innerHTML = "Selected file: " + this.value.replace(/.*[\/\\]/, '');
+      document.getElementById('fileName').style.visibility = "visible";
+    };
 </script>
 
 
