@@ -23,10 +23,16 @@ keras==2.2.4, tensorflow==1.11.0, Flask==1.1.2
 #### PS: You need to download the pretrained model in order to use application, thus it could be found [here](https://drive.google.com/drive/folders/12s4rbLmnjW4e8MmESbfRStGbrjOrahlW). You need to download "my_model_colorization.h5".
 
 ## Usage
+First, clone the repository.
 
-Download the pretrained model from link above then replace it with `dummyFile` under `MODEL` directory.
+```bash
+git clone https://github.com/4turkuaz/chromaGAN-colorizer-using-flask
+cd chromaGAN-colorizer-using-flask/
+```
 
-Besides, in the first use it is required to download the `VGG16` to colorize the pictures. It will be downloaded automatically once you run it.
+Then, download the pretrained model from link above then replace it with `dummyFile` under `MODEL` directory.
+
+Besides, in the first use, it is required to download the `VGG16` to colorize the pictures. It will be downloaded automatically once you run it.
 
 Within the chromaGAN-colorizer-using-Flask directory, run:
 
