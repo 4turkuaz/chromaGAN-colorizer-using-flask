@@ -8,6 +8,8 @@ Casablanca, 1942
 
 ## Requirements
 
+Prerequisite: Python 3.5.2 & Linux
+
 Requirements could be found in requirements.txt, to install them:
 
 ```bash
