@@ -10,6 +10,17 @@ Casablanca, 1942
 
 Prerequisite: Python 3.5.2 & Linux
 
+First, clone the repository.
+
+```bash
+git clone https://github.com/4turkuaz/chromaGAN-colorizer-using-flask
+cd chromaGAN-colorizer-using-flask/
+```
+
+Then, download the pretrained model from link above then replace it with `dummyFile` under `MODEL` directory.
+
+Besides, in the first use, it is required to download the `VGG16` to colorize the pictures. It will be downloaded automatically once you run it.
+
 Requirements could be found in requirements.txt, to install them:
 
 ```bash
@@ -23,18 +34,8 @@ keras==2.2.4, tensorflow==1.11.0, Flask==1.1.2
 #### PS: You need to download the pretrained model in order to use application, thus it could be found [here](https://drive.google.com/drive/folders/12s4rbLmnjW4e8MmESbfRStGbrjOrahlW). You need to download "my_model_colorization.h5".
 
 ## Usage
-First, clone the repository.
 
-```bash
-git clone https://github.com/4turkuaz/chromaGAN-colorizer-using-flask
-cd chromaGAN-colorizer-using-flask/
-```
-
-Then, download the pretrained model from link above then replace it with `dummyFile` under `MODEL` directory.
-
-Besides, in the first use, it is required to download the `VGG16` to colorize the pictures. It will be downloaded automatically once you run it.
-
-Within the chromaGAN-colorizer-using-Flask directory, run:
+Within the chromaGAN-colorizer-using-flask directory, run:
 
 ```bash
 EXPORT FLASK_APP=run.py
